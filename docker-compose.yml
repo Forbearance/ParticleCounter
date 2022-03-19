@@ -1,0 +1,18 @@
+version: "3.9"
+services:
+  app:
+    image: raspberrypi.local:5001/flasktest_app
+    ports:
+      - 11111:5000
+    env_file:
+      - ./app.env
+    networks:
+      - flasktest
+    deploy:
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 3
+        window: 120s
+networks:
+  flasktest:
