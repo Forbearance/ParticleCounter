@@ -11,8 +11,8 @@ RUN apt-get update \
     && echo "[FreeTDS]\n\
 Description = FreeTDS unixODBC Driver\n\
 Driver = /usr/lib/x86_64-linux-gnu/odbc/libtdsodbc.so\n\
-Setup = /usr/lib/x86_64-linux-gnu/odbc/libtdsS.so" >> /etc/odbcinst.ini \
-&& echo "[sql-server]\n\
+Setup = /usr/lib/x86_64-linux-gnu/odbc/libtdsS.so" >> /etc/odbcinst.ini
+RUN echo "[sql-server]\n\
 Driver = FreeTDS\n\
 Server = 192.168.3.120\n\
 Database = ParticleCounter\n\
