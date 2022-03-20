@@ -1,7 +1,9 @@
 version: "3.9"
 services:
   app:
-    build: arm32v7.Dockerfile
+    build:
+      context: ./
+      dockerfile: arm32v7.Dockerfile
     ports:
       - 11111:5000
     env_file:
