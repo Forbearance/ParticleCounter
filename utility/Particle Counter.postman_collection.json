@@ -1,0 +1,146 @@
+{
+	"info": {
+		"_postman_id": "72b5c8fb-c538-459a-9bbe-1268c7ec937e",
+		"name": "Particle Counter",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET /",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}",
+					"host": [
+						"{{url}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Not Found",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/1/1",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"1",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST /",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\": \"R12\",\r\n    \"device_id\": \"5539\",\r\n    \"model\": \"5301P\",\r\n    \"timestamp\": \"2022-03-10 15:00:32 \",\r\n    \"data\": {\r\n        \"sample\": {\r\n            \"record\": 44980,\r\n            \"seconds\": 60.00,\r\n            \"volCfm\": 0.10001589,\r\n            \"location\": \"Surfscan\",\r\n            \"status\": \"OK\",\r\n            \"date_time\": \"2022-03-10 15:00:30 \"\r\n        },\r\n        \"environmentals\": {\r\n            \"pm2.5\": 0.00,\r\n            \"pm10\": 0.05,\r\n            \"bp_mbar\": 968.13,\r\n            \"temp_c\": 23.10,\r\n            \"rh_pct\": 15.00\r\n        },\r\n        \"particulates\": {\r\n            \"0.3um\": {\r\n                \"d_raw\": 63,\r\n                \"s_raw\": 77,\r\n                \"d_ft3\": 629,\r\n                \"s_ft3\": 766,\r\n                \"d_m3\": 22244,\r\n                \"s_m3\": 27186,\r\n                \"d_pm\": 0.00,\r\n                \"s_pm\": 0.00\r\n            },\r\n            \"0.5um\": {\r\n                \"d_raw\": 11,\r\n                \"s_raw\": 14,\r\n                \"d_ft3\": 109,\r\n                \"s_ft3\": 137,\r\n                \"d_m3\": 3883,\r\n                \"s_m3\": 4942,\r\n                \"d_pm\": 0.00,\r\n                \"s_pm\": 0.00\r\n            },\r\n            \"1.0um\": {\r\n                \"d_raw\": 1,\r\n                \"s_raw\": 3,\r\n                \"d_ft3\": 9,\r\n                \"s_ft3\": 28,\r\n                \"d_m3\": 353,\r\n                \"s_m3\": 1059,\r\n                \"d_pm\": 0.00,\r\n                \"s_pm\": 0.00\r\n            },\r\n            \"2.5um\": {\r\n                \"d_raw\": 2,\r\n                \"s_raw\": 2,\r\n                \"d_ft3\": 19,\r\n                \"s_ft3\": 19,\r\n                \"d_m3\": 706,\r\n                \"s_m3\": 706,\r\n                \"d_pm\": 0.05,\r\n                \"s_pm\": 0.00\r\n            },\r\n            \"5.0um\": {\r\n                \"d_raw\": 0,\r\n                \"s_raw\": 0,\r\n                \"d_ft3\": 0,\r\n                \"s_ft3\": 0,\r\n                \"d_m3\": 0,\r\n                \"s_m3\": 0,\r\n                \"d_pm\": 0.00,\r\n                \"s_pm\": 0.05\r\n            },\r\n            \"10.0um\": {\r\n                \"d_raw\": 0,\r\n                \"s_raw\": 0,\r\n                \"d_ft3\": 0,\r\n                \"s_ft3\": 0,\r\n                \"d_m3\": 0,\r\n                \"s_m3\": 0,\r\n                \"d_pm\": 0.00,\r\n                \"s_pm\": 0.05\r\n            }\r\n        }\r\n    }\r\n}"
+				},
+				"url": {
+					"raw": "{{url}}",
+					"host": [
+						"{{url}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST R12",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\": \"R12\",\r\n    \"device_id\": \"5539\",\r\n    \"model\": \"5301P\",\r\n    \"timestamp\": \"2022-03-10 15:00:32 \",\r\n    \"data\": {\r\n        \"sample\": {\r\n            \"record\": 44980,\r\n            \"seconds\": 60.00,\r\n            \"volCfm\": 0.10001589,\r\n            \"location\": \"Surfscan\",\r\n            \"status\": \"OK\",\r\n            \"date_time\": \"2022-03-10 15:00:30 \"\r\n        },\r\n        \"environmentals\": {\r\n            \"pm2.5\": 0.00,\r\n            \"pm10\": 0.05,\r\n            \"bp_mbar\": 968.13,\r\n            \"temp_c\": 23.10,\r\n            \"rh_pct\": 15.00\r\n        },\r\n        \"particulates\": {\r\n            \"0.3um\": {\r\n                \"d_raw\": 63,\r\n                \"s_raw\": 77,\r\n                \"d_ft3\": 629,\r\n                \"s_ft3\": 766,\r\n                \"d_m3\": 22244,\r\n                \"s_m3\": 27186,\r\n                \"d_pm\": 0.00,\r\n                \"s_pm\": 0.00\r\n            },\r\n            \"0.5um\": {\r\n                \"d_raw\": 11,\r\n                \"s_raw\": 14,\r\n                \"d_ft3\": 109,\r\n                \"s_ft3\": 137,\r\n                \"d_m3\": 3883,\r\n                \"s_m3\": 4942,\r\n                \"d_pm\": 0.00,\r\n                \"s_pm\": 0.00\r\n            },\r\n            \"1.0um\": {\r\n                \"d_raw\": 1,\r\n                \"s_raw\": 3,\r\n                \"d_ft3\": 9,\r\n                \"s_ft3\": 28,\r\n                \"d_m3\": 353,\r\n                \"s_m3\": 1059,\r\n                \"d_pm\": 0.00,\r\n                \"s_pm\": 0.00\r\n            },\r\n            \"2.5um\": {\r\n                \"d_raw\": 2,\r\n                \"s_raw\": 2,\r\n                \"d_ft3\": 19,\r\n                \"s_ft3\": 19,\r\n                \"d_m3\": 706,\r\n                \"s_m3\": 706,\r\n                \"d_pm\": 0.05,\r\n                \"s_pm\": 0.00\r\n            },\r\n            \"5.0um\": {\r\n                \"d_raw\": 0,\r\n                \"s_raw\": 0,\r\n                \"d_ft3\": 0,\r\n                \"s_ft3\": 0,\r\n                \"d_m3\": 0,\r\n                \"s_m3\": 0,\r\n                \"d_pm\": 0.00,\r\n                \"s_pm\": 0.05\r\n            },\r\n            \"10.0um\": {\r\n                \"d_raw\": 0,\r\n                \"s_raw\": 0,\r\n                \"d_ft3\": 0,\r\n                \"s_ft3\": 0,\r\n                \"d_m3\": 0,\r\n                \"s_m3\": 0,\r\n                \"d_pm\": 0.00,\r\n                \"s_pm\": 0.05\r\n            }\r\n        }\r\n    }\r\n}"
+				},
+				"url": {
+					"raw": "{{url}}/R12",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"R12"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST R15",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\": \"R12\",\r\n    \"device_id\": \"5539\",\r\n    \"model\": \"5301P\",\r\n    \"timestamp\": \"2022-03-10 15:00:32 \",\r\n    \"data\": {\r\n        \"sample\": {\r\n            \"record\": 44980,\r\n            \"seconds\": 60.00,\r\n            \"volCfm\": 0.10001589,\r\n            \"location\": \"Surfscan\",\r\n            \"status\": \"OK\",\r\n            \"date_time\": \"2022-03-10 15:00:30 \"\r\n        },\r\n        \"environmentals\": {\r\n            \"pm2.5\": 0.00,\r\n            \"pm10\": 0.05,\r\n            \"bp_mbar\": 968.13,\r\n            \"temp_c\": 23.10,\r\n            \"rh_pct\": 15.00\r\n        },\r\n        \"particulates\": {\r\n            \"0.3um\": {\r\n                \"d_raw\": 63,\r\n                \"s_raw\": 77,\r\n                \"d_ft3\": 629,\r\n                \"s_ft3\": 766,\r\n                \"d_m3\": 22244,\r\n                \"s_m3\": 27186,\r\n                \"d_pm\": 0.00,\r\n                \"s_pm\": 0.00\r\n            },\r\n            \"0.5um\": {\r\n                \"d_raw\": 11,\r\n                \"s_raw\": 14,\r\n                \"d_ft3\": 109,\r\n                \"s_ft3\": 137,\r\n                \"d_m3\": 3883,\r\n                \"s_m3\": 4942,\r\n                \"d_pm\": 0.00,\r\n                \"s_pm\": 0.00\r\n            },\r\n            \"1.0um\": {\r\n                \"d_raw\": 1,\r\n                \"s_raw\": 3,\r\n                \"d_ft3\": 9,\r\n                \"s_ft3\": 28,\r\n                \"d_m3\": 353,\r\n                \"s_m3\": 1059,\r\n                \"d_pm\": 0.00,\r\n                \"s_pm\": 0.00\r\n            },\r\n            \"2.5um\": {\r\n                \"d_raw\": 2,\r\n                \"s_raw\": 2,\r\n                \"d_ft3\": 19,\r\n                \"s_ft3\": 19,\r\n                \"d_m3\": 706,\r\n                \"s_m3\": 706,\r\n                \"d_pm\": 0.05,\r\n                \"s_pm\": 0.00\r\n            },\r\n            \"5.0um\": {\r\n                \"d_raw\": 0,\r\n                \"s_raw\": 0,\r\n                \"d_ft3\": 0,\r\n                \"s_ft3\": 0,\r\n                \"d_m3\": 0,\r\n                \"s_m3\": 0,\r\n                \"d_pm\": 0.00,\r\n                \"s_pm\": 0.05\r\n            },\r\n            \"10.0um\": {\r\n                \"d_raw\": 0,\r\n                \"s_raw\": 0,\r\n                \"d_ft3\": 0,\r\n                \"s_ft3\": 0,\r\n                \"d_m3\": 0,\r\n                \"s_m3\": 0,\r\n                \"d_pm\": 0.00,\r\n                \"s_pm\": 0.05\r\n            }\r\n        }\r\n    }\r\n}"
+				},
+				"url": {
+					"raw": "{{url}}/R15",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"R15"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "http://10.174.7.32:11111",
+			"type": "default"
+		}
+	]
+}
