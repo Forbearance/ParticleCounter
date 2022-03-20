@@ -1,4 +1,7 @@
-FROM python
+FROM python:3.10.3-bullseye
+
+LABEL com.particlecounter.description="Particle Counter Web Server"
+LABEL com.particlecounter.image.authors="Jerry Wu"
 
 COPY . /app
 WORKDIR /app
