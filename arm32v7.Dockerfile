@@ -7,8 +7,8 @@ RUN apt-get update \
     && pip install --no-cache-dir -r requirements.txt \
     && echo "[FreeTDS]\n\
 Description = FreeTDS unixODBC Driver\n\
-Driver = /usr/lib/arm-linux-gnueabi/odbc/libtdsodbc.so\n\
-Setup = /usr/lib/arm-linux-gnueabi/odbc/libtdsS.so" >> /etc/odbcinst.ini \
+Driver = /usr/lib/arm-linux-gnueabihf/odbc/libtdsodbc.so\n\
+Setup = /usr/lib/arm-linux-gnueabihf/odbc/libtdsS.so" >> /etc/odbcinst.ini \
 && echo "[sql-server]\n\
 Driver = FreeTDS\n\
 Server = 192.168.3.120\n\
