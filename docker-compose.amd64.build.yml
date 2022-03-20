@@ -1,11 +1,11 @@
-version: "3.9"
+version: '3'
 services:
   app:
     build:
       context: ./
       dockerfile: amd64.Dockerfile
+    image: particlecounter
     ports:
       - 11111:5000
     env_file:
       - ./app.env
-    restart: unless-stopped
