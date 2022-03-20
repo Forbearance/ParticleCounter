@@ -3,3 +3,6 @@
 
 !app.py
 !requirements.txt
+!app/
+
+*/__pycache__
