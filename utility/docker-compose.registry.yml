@@ -15,6 +15,7 @@ services:
         constraints:
           - 'node.role == manager'
           - 'node.platform.os == linux'
+          - 'node.hostname == raspberrypi114'
       restart_policy:
         condition: on-failure
         delay: 5s
